@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bike Gallery</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .gallery-item {
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bike Gallery</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="bike1.jpg" alt="Bike 1">
+        </div>
+        <div class="gallery-item">
+            <img src="bike2.jpg" alt="Bike 2">
+        </div>
+        <div class="gallery-item">
+            <img src="bike3.jpg" alt="Bike 3">
+        </div>
+        <!-- Add more gallery items as needed -->
+    </div>
+</div>
+
+</body>
+</html>
